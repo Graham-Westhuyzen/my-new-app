@@ -12,24 +12,32 @@ export default function Navbar({ profilePhoto, logout, title }) {
           <FontAwesomeIcon icon='fa-solid fa-bars' size='2xs' />
         </label>
         <a href='/' className='lg:hidden block font-medium normal-case text-xl'>
-          <span className='normal-case text-error'>{title}</span>
-          <span className='uppercase'>TBD</span>
+          {title}
         </a>
       </div>
       <div>
         <ul className='menu menu-horizontal'>
           <li>
-            <a href='/' className='hover:text-black hover:bg-inherit p-4'>
+            <a
+              href='/'
+              className='p-4 font-medium hover:text-inherit'
+            >
               Page 1
             </a>
           </li>
           <li>
-            <a href='/' className='hover:bg-inherit hover:text-black p-4'>
+            <a
+              href='/'
+              className='p-4 font-medium hover:text-inherit'
+            >
               Page 2
             </a>
           </li>
           <li>
-            <a href='/' className='hover:bg-inherit hover:text-black p-4'>
+            <a
+              href='/'
+              className='p-4 font-medium hover:text-inherit'
+            >
               Page 3
             </a>
           </li>

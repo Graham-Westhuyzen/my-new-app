@@ -1,6 +1,11 @@
 import React from 'react';
 import './App.css';
+
+// Components
 import Navbar from './Components/Navbar';
+
+
+// Fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';

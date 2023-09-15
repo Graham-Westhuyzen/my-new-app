@@ -3,9 +3,7 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      colors: {
-        primary: '#FDBA93',
-      },
+      colors: {},
     },
   },
   daisyui: {
@@ -30,23 +28,15 @@ module.exports = {
 
         //   error: '#D94141',
         // },
-        starfield: {
+        mytheme: {
           primary: '#182F51',
-
           secondary: '#4A668D',
-          
           accent: '#21314F',
-          
           neutral: '#eee',
-          
           'base-100': '#fff',
-          
           info: '#EB7A4A',
-          
           success: '#20C743',
-          
           warning: '#D7A64A',
-          
           error: '#C7243D',
         },
       },

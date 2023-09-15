@@ -9,35 +9,16 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        // mytheme: {
-        //   primary: '#F2AB91',
-
-        //   secondary: '#C2F2ED',
-
-        //   accent: '#FF8E79',
-
-        //   neutral: '#0f172a',
-
-        //   'base-100': '#10253E',
-
-        //   info: '#96AEFE',
-
-        //   success: '#51C083',
-
-        //   warning: '#FFC53E',
-
-        //   error: '#D94141',
-        // },
         mytheme: {
-          primary: '#182F51',
-          secondary: '#4A668D',
-          accent: '#21314F',
-          neutral: '#eee',
-          'base-100': '#fff',
-          info: '#EB7A4A',
-          success: '#20C743',
-          warning: '#D7A64A',
-          error: '#C7243D',
+          'primary': '#182C4F', //#112138? Dark navy blue
+          'secondary': '#4A668D', // Light washed out blue
+          'accent': '#21314F', // Dark washed out blue
+          'neutral': '#eee', // Light gray
+          'base-100': '#fff', // White
+          'info': '#EB7A4A', // Light Orange
+          'success': '#20C743', // Light green
+          'warning': '#D7A64A', // Dark yellow
+          'error': '#C7243D', // Light red
         },
       },
     ],

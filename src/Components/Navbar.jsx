@@ -15,8 +15,7 @@ export default function Navbar({ profilePhoto, logout, title }) {
           {title}
         </a>
       </div>
-      <div>
-        <ul className='menu menu-horizontal'>
+      <ul className='menu menu-horizontal'>
           <li>
             <a
               href='/'
@@ -41,8 +40,7 @@ export default function Navbar({ profilePhoto, logout, title }) {
               Page 3
             </a>
           </li>
-        </ul>
-      </div>
+      </ul>
       <div className='divider divider-horizontal mr-8 ml-2' />
       <div className='flex-none gap-2'>
         <div className='form-control'>

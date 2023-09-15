@@ -29,9 +29,8 @@ function App() {
         <label htmlFor='my-drawer-2' className='drawer-overlay'></label>
         <aside className='w-80 bg-base-200 min-h-full'>
           <div className='hidden lg:block pt-3'>
-            <a href='/' className='px-4 font-medium text-2xl'>
-              <span className='normal-case text-info'>{title}</span>
-              <span className='uppercase text-primary'>TBD</span>
+            <a href='/' className='px-4 font-medium text-2xl normal-case'>
+              {title}
             </a>
           </div>
           <div className='menu p-4 w-full bg-base-200'>

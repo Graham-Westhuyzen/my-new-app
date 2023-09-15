@@ -5,9 +5,15 @@ export default function Navbar({ profilePhoto, logout, title }) {
     <div>
       <div className='drawer lg:drawer-open text-secondary'>
         <input id='my-drawer-2' type='checkbox' className='drawer-toggle' />
-        <div className='drawer-content bg-neutral'>
+        <div className='drawer-content'>
           <div className='navbar h-16 bg-base-200'>
             <div className='flex-1'>
+            <label
+            htmlFor='my-drawer-2'
+            className='btn btn-ghost drawer-button lg:hidden mr-2 text-4xl'
+          >
+            {/* <FontAwesomeIcon icon="fa-solid fa-bars" /> */}
+          </label>
               <a
                 href='/'
                 className='lg:hidden block font-medium normal-case text-xl'
@@ -16,26 +22,34 @@ export default function Navbar({ profilePhoto, logout, title }) {
               </a>
             </div>
             <div className='h-full'>
-              <a
-                href='/'
-                className='hover:outline outline-1 outline-primary -outline-offset-[5px] rounded-xl active:-mb-1 active:border-b-4 p-4'
-              >
-                Page 1
-              </a>
-              <a
-                href='/'
-                className='hover:outline outline-1 outline-primary -outline-offset-[5px] rounded-xl active:-mb-1 active:border-b-4 p-4'
-              >
-                Page 2
-              </a>
-              <a
-                href='/'
-                className='hover:outline outline-1 outline-primary -outline-offset-[5px] rounded-xl active:-mb-1 active:border-b-4 p-4'
-              >
-                Page 3
-              </a>
+              <ul className='menu menu-horizontal'>
+                <li>
+                  <a
+                    href='/'
+                    className='hover:bg-inherit hover:text-primary p-4'
+                  >
+                    Page 1
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='/'
+                    className='hover:bg-inherit hover:text-primary p-4'
+                  >
+                    Page 2
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='/'
+                    className='hover:bg-inherit hover:text-primary p-4'
+                  >
+                    Page 3
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div className='divider divider-horizontal mr-8 ml-4' />
+            <div className='divider divider-horizontal mr-8 ml-2' />
             <div className='flex-none gap-2'>
               <div className='form-control'>
                 <input
@@ -73,13 +87,8 @@ export default function Navbar({ profilePhoto, logout, title }) {
               </div>
             </div>
           </div>
-          <div className='divider -mt-1.5' />
-          <label
-            htmlFor='my-drawer-2'
-            className='btn btn-ghost drawer-button lg:hidden'
-          >
-            Open drawer
-          </label>
+          <div className='divider -mt-1.5 bg-base-200' />
+          <div className='divider divider-horizontal bg-base-200 h-full -mt-[23px] -ml-[7px]' />
         </div>
         <div className='drawer-side'>
           <label htmlFor='my-drawer-2' className='drawer-overlay'></label>
@@ -87,7 +96,7 @@ export default function Navbar({ profilePhoto, logout, title }) {
             <div className='hidden lg:block '>
               <a href='/' className='block px-4 pt-3 font-medium text-2xl'>
                 <span className='normal-case text-info'>{title}</span>
-                <span className='uppercase text-primary'>Thing</span>
+                <span className='uppercase text-primary'>TBD</span>
               </a>
             </div>
             <ul className='menu p-4 w-full bg-base-200'>
